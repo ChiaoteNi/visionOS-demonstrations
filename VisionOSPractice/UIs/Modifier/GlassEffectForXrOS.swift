@@ -13,7 +13,7 @@ struct GlassEffectForXrOS: ViewModifier {
     func body(content: Content) -> some View {
         content
         #if os(xrOS)
-//            .glassBackgroundEffect()
+            .glassBackgroundEffect()
         #endif
     }
 }

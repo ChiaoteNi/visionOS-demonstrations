@@ -15,7 +15,7 @@ struct ZOffsetForXrOS: ViewModifier {
     func body(content: Content) -> some View {
         content
         #if os(xrOS)
-//            .offset(z: offset)
+            .offset(z: offset)
         #endif
     }
 }

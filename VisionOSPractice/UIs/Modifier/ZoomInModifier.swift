@@ -15,12 +15,10 @@ struct ZoomInModifier: ViewModifier {
     let isFocused: Bool
 
     func body(content: Content) -> some View {
-//        content
+        content
         #if os(xrOS)
-        content
-//            .offset(z: zOffset)
+            .offset(z: zOffset)
         #else
-        content
             .scaleEffect(
                 isFocused
                 ? scaleEffect
