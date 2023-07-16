@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "iconCloseMenu@2x 1.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

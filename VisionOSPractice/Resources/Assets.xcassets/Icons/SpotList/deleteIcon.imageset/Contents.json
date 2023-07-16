@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "deleteSpot.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

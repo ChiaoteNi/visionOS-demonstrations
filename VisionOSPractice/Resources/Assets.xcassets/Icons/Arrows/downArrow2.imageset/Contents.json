@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "downArrow2.png",
+      "idiom" : "universal",
+      "resizing" : {
+        "cap-insets" : {
+          "bottom" : 25,
+          "top" : 6
+        },
+        "center" : {
+          "height" : 4,
+          "mode" : "tile"
+        },
+        "mode" : "3-part-vertical"
+      }
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
