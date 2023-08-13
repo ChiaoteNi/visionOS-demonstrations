@@ -1,5 +1,5 @@
 //
-//  TestingView.swift
+//  WindowBasedDemo.swift
 //  TravelApp
 //
 //  Created by Chiaote Ni on 2023/7/1.
@@ -7,51 +7,50 @@
 
 import SwiftUI
 
-struct TestingView: View {
+struct WindowBasedDemo: View {
 
     @State var isSideBarVisible: NavigationSplitViewVisibility = .all
     @State var isSheetVisible: Bool = true
 
     var body: some View {
-//        GeometryReader(content: { geometry in
-//            zStack()
-//                .frame(width: 10, height: 10)
-    //        overLayers()
-        navigationSplitView()
-//        })
-//            .background(.blue)
+        ZStack {
+            overLayers()
+            zStack()
+            navigationSplitView()
+            ToolsView()
+            // Method 1: `if os(xcOS)` every where
+//                #if os(xrOS)
+//                .offset(z: 100)
+//                #endif
+            // Method 2: create a custom ViewModifier for this
+                .modifier(ZOffsetForXrOS(offset: 100))
+                .offset(x: 600)
+                .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+        }
+//        #if os(xrOS)
+//        .glassBackgroundEffect()
+//        #endif
+        .modifier(GlassEffectForXrOS())
 #if os(xrOS)
-            .ornament(attachmentAnchor: .scene(alignment: .bottom)) {
-                VStack {
-                    Text("Detalle del personaje")
-                }
-                .frame(width: 400, height: 60)
-//                .background(.green)
-//                .glassBackgroundEffect()
-                .modifier(GlassEffectForXrOS())
+        .ornament(attachmentAnchor: .scene(alignment: .bottom), contentAlignment: .center) {
+            VStack {
+                Text("Detalle del personaje")
             }
-            .ornament(attachmentAnchor: .scene(alignment: .topLeading)) {
-                VStack {
-                    Text("Detalle del personaje")
-                }
-                .frame(width: 400, height: 60)
-//                .background(.green)
-//                .glassBackgroundEffect()
-                .modifier(GlassEffectForXrOS())
+            .frame(width: 400, height: 60)
+            .background(.green)
+            .glassBackgroundEffect()
+        }
+        .ornament(attachmentAnchor: .scene(alignment: .topLeading)) {
+            VStack {
+                Text("Detalle del personaje")
             }
-//            .sheet(isPresented: $isSheetVisible) {
-//                Text(verbatim: "Sheet")
-//            }
-            .overlay {
-                ToolsView()
-//                    .background(Color.red)
-//                    .offset(z: 30)
-                    .modifier(ZOffsetForXrOS(offset: 100))
-                    .offset(x: 600)
-                    .background(Color.gray)
-//                    .glassBackgroundEffect()
-                    .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-            }
+            .frame(width: 400, height: 60)
+            .background(.green)
+            .glassBackgroundEffect()
+        }
+        //            .sheet(isPresented: $isSheetVisible) {
+        //                Text(verbatim: "Sheet")
+        //            }
 #endif
     }
 
@@ -62,19 +61,19 @@ struct TestingView: View {
             .overlay {
                 Text("Hello, World!")
                     .background(.ultraThinMaterial)
-//#if os(xrOS)
+//                    #if os(xrOS)
 //                    .offset(z: 50)
+//                    #endif
                     .modifier(ZOffsetForXrOS(offset: 50))
-//#endif
                     .modifier(OffsetLeft())
             }
             .overlay {
                 Text("Hello, World!")
                     .background(.ultraThinMaterial)
-//#if os(xrOS)
+//                    #if os(xrOS)
 //                    .offset(z: 100)
+//                    #endif
                     .modifier(ZOffsetForXrOS(offset: 100))
-//#endif
                     .modifier(OffsetRight())
             }
     }
@@ -86,17 +85,17 @@ struct TestingView: View {
                 .background(.red)
             Text("Hello, World!")
                 .background(.red)
-//#if os(xrOS)
+//                #if os(xrOS)
 //                .offset(z: 50)
+//                #endif
                 .modifier(ZOffsetForXrOS(offset: 50))
-//#endif
                 .modifier(OffsetLeft())
             Text("Hello, World!")
                 .background(.red)
-//#if os(xrOS)
+//                #if os(xrOS)
 //                .offset(z: 100)
+//                #endif
                 .modifier(ZOffsetForXrOS(offset: 100))
-//#endif
                 .modifier(OffsetRight())
 
         }
@@ -127,5 +126,5 @@ private struct OffsetRight: ViewModifier {
 }
 
 #Preview {
-    TestingView()
+    WindowBasedDemo()
 }

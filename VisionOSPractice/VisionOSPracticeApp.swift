@@ -13,8 +13,8 @@ struct VisionOSPracticeApp: App {
         WindowGroup {
             ContentView()
         }
-#if os(xrOS)
-//        .windowStyle(.volumetric)
+        #if os(xrOS)
+        .windowStyle(.volumetric)
         #endif
 //        .defaultSize(Size3D(width: 100, height: 100, depth: 100), in: .feet)
 

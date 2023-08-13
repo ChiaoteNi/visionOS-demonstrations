@@ -10,14 +10,15 @@
 		9304902B2A5FA913007103F5 /* ZoomInModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9304902A2A5FA913007103F5 /* ZoomInModifier.swift */; };
 		9304902D2A5FA91E007103F5 /* ZOffsetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9304902C2A5FA91E007103F5 /* ZOffsetModifier.swift */; };
 		9304902F2A5FAC28007103F5 /* GlassEffectForXrOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9304902E2A5FAC28007103F5 /* GlassEffectForXrOS.swift */; };
-		932C286C2A58017A008038DA /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C286B2A58017A008038DA /* ToolsView.swift */; };
 		937D08DE2A4A504300A155BD /* VisionOSPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937D08DD2A4A504300A155BD /* VisionOSPracticeApp.swift */; };
 		937D08E02A4A504300A155BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937D08DF2A4A504300A155BD /* ContentView.swift */; };
 		937D08E42A4A504300A155BD /* ImageBasedLight.exr in Resources */ = {isa = PBXBuildFile; fileRef = 937D08E32A4A504300A155BD /* ImageBasedLight.exr */; };
 		937D08E62A4A504400A155BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 937D08E52A4A504400A155BD /* Assets.xcassets */; };
 		937D08E92A4A504400A155BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 937D08E82A4A504400A155BD /* Preview Assets.xcassets */; };
 		937D08F42A4A504400A155BD /* VisionOSPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937D08F32A4A504400A155BD /* VisionOSPracticeTests.swift */; };
-		93E14F612A50208D00CADF38 /* TestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E14F602A50208D00CADF38 /* TestingView.swift */; };
+		939FD3FF2A640B8500F5F78F /* XrOSBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939FD3FE2A640B8500F5F78F /* XrOSBackground.swift */; };
+		93CD493B2A88A35C00DFF412 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD49392A88A35C00DFF412 /* ToolsView.swift */; };
+		93CD493C2A88A35C00DFF412 /* WindowBasedDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD493A2A88A35C00DFF412 /* WindowBasedDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +35,6 @@
 		9304902A2A5FA913007103F5 /* ZoomInModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomInModifier.swift; sourceTree = "<group>"; };
 		9304902C2A5FA91E007103F5 /* ZOffsetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZOffsetModifier.swift; sourceTree = "<group>"; };
 		9304902E2A5FAC28007103F5 /* GlassEffectForXrOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassEffectForXrOS.swift; sourceTree = "<group>"; };
-		932C286B2A58017A008038DA /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
 		937D08D62A4A504300A155BD /* VisionOSPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionOSPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		937D08DD2A4A504300A155BD /* VisionOSPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOSPracticeApp.swift; sourceTree = "<group>"; };
 		937D08DF2A4A504300A155BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,7 +44,10 @@
 		937D08EA2A4A504400A155BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		937D08EF2A4A504400A155BD /* VisionOSPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisionOSPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		937D08F32A4A504400A155BD /* VisionOSPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOSPracticeTests.swift; sourceTree = "<group>"; };
-		93E14F602A50208D00CADF38 /* TestingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingView.swift; sourceTree = "<group>"; };
+		939FD3FE2A640B8500F5F78F /* XrOSBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XrOSBackground.swift; sourceTree = "<group>"; };
+		93C081A02A63D9450000CED1 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		93CD49392A88A35C00DFF412 /* ToolsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
+		93CD493A2A88A35C00DFF412 /* WindowBasedDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowBasedDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,7 @@
 		930490292A5FA904007103F5 /* Modifier */ = {
 			isa = PBXGroup;
 			children = (
+				939FD3FE2A640B8500F5F78F /* XrOSBackground.swift */,
 				9304902A2A5FA913007103F5 /* ZoomInModifier.swift */,
 				9304902C2A5FA91E007103F5 /* ZOffsetModifier.swift */,
 				9304902E2A5FAC28007103F5 /* GlassEffectForXrOS.swift */,
@@ -78,6 +82,7 @@
 		9315EFD32A4BB1440031D898 /* UIs */ = {
 			isa = PBXGroup;
 			children = (
+				935ADEE52A889DBA005D6543 /* Demonstrations based on Windows */,
 				930490292A5FA904007103F5 /* Modifier */,
 			);
 			path = UIs;
@@ -92,6 +97,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		935ADEE52A889DBA005D6543 /* Demonstrations based on Windows */ = {
+			isa = PBXGroup;
+			children = (
+				93CD49392A88A35C00DFF412 /* ToolsView.swift */,
+				93CD493A2A88A35C00DFF412 /* WindowBasedDemo.swift */,
+			);
+			path = "Demonstrations based on Windows";
+			sourceTree = "<group>";
+		};
 		937D08CD2A4A504300A155BD = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +113,7 @@
 				937D08D92A4A504300A155BD /* Packages */,
 				937D08F22A4A504400A155BD /* VisionOSPracticeTests */,
 				937D08D72A4A504300A155BD /* Products */,
+				93CD49382A88A30200DFF412 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,8 +131,6 @@
 			children = (
 				937D08DD2A4A504300A155BD /* VisionOSPracticeApp.swift */,
 				937D08DF2A4A504300A155BD /* ContentView.swift */,
-				93E14F602A50208D00CADF38 /* TestingView.swift */,
-				932C286B2A58017A008038DA /* ToolsView.swift */,
 				9315EFD32A4BB1440031D898 /* UIs */,
 				9335CA942A8B579D00EE7F21 /* Extensions */,
 				9315F0322A4BB1950031D898 /* Resources */,
@@ -148,6 +161,13 @@
 				937D08F32A4A504400A155BD /* VisionOSPracticeTests.swift */,
 			);
 			path = VisionOSPracticeTests;
+			sourceTree = "<group>";
+		};
+		93CD49382A88A30200DFF412 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +280,9 @@
 				937D08E02A4A504300A155BD /* ContentView.swift in Sources */,
 				937D08DE2A4A504300A155BD /* VisionOSPracticeApp.swift in Sources */,
 				9304902B2A5FA913007103F5 /* ZoomInModifier.swift in Sources */,
-				93E14F612A50208D00CADF38 /* TestingView.swift in Sources */,
-				932C286C2A58017A008038DA /* ToolsView.swift in Sources */,
+				939FD3FF2A640B8500F5F78F /* XrOSBackground.swift in Sources */,
+				93CD493C2A88A35C00DFF412 /* WindowBasedDemo.swift in Sources */,
+				93CD493B2A88A35C00DFF412 /* ToolsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,12 +17,14 @@ private struct ToolsBarItemModifier: ViewModifier {
             .background(.ultraThinMaterial)
             .clipShape(Circle())
             .hoverEffect()
-#if os(xrOS)
+            #if os(xrOS)
             .offset(z: -1)
-        #endif
+            #endif
     }
 }
 
+// This demo shows a potential way to create a buttons group with varying z offset
+// You can extend the usage to create some control bar that is similar to the native keyboard in the VisionOS
 struct ToolsView: View {
 
     @State var isToolsBarExpended = false
@@ -43,7 +45,7 @@ struct ToolsView: View {
                 x: isToolsBarExpended ? -30 : 0,
                 y: isToolsBarExpended ? -60 : 0
             )
-            .modifier(ZOffsetForXrOS(offset: 0))
+            .modifier(ZOffsetForXrOS(offset: isToolsBarExpended ? 10 : 0))
             .opacity(isToolsBarExpended ? 1 : 0)
             .animation(
                 .easeInOut(duration: 0.20),
@@ -55,11 +57,8 @@ struct ToolsView: View {
                 image: Image(systemName: "list.dash")
             )
             .modifier(ToolsBarItemModifier())
-//            .onTapGesture {
-//                isSpotListDisplayed.toggle()
-//            }
             .offset(x: isToolsBarExpended ? -65 : 0)
-            .modifier(ZOffsetForXrOS(offset: 20))
+            .modifier(ZOffsetForXrOS(offset: isToolsBarExpended ? 20 : 0))
             .opacity(isToolsBarExpended ? 1 : 0)
             .animation(
                 .easeInOut(duration: 0.25),
@@ -75,13 +74,12 @@ struct ToolsView: View {
                 x: isToolsBarExpended ? -30 : 0,
                 y: isToolsBarExpended ? 60 : 0
             )
-            .modifier(ZOffsetForXrOS(offset: 40))
+            .modifier(ZOffsetForXrOS(offset: isToolsBarExpended ? 30 : 0))
             .opacity(isToolsBarExpended ? 1 : 0)
             .animation(
                 .easeInOut(duration: 0.3),
                 value: isToolsBarExpended
             )
-//            .onTapGesture { is3DMaps.toggle() }
 
             toolsBarItem(image: Image(systemName: "arrow.left"))
                 .modifier(ToolsBarItemModifier())

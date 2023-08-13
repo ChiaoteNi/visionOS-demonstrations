@@ -5,7 +5,8 @@
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationPreferredDefaultSceneSessionRole</key>
-		<string>UIWindowSceneSessionRoleApplication</string>
+        <!--		<string>UIWindowSceneSessionRoleApplication</string>-->
+        <string>UIWindowSceneSessionRoleVolumetricApplication</string>
 	</dict>
 </dict>
 </plist>
