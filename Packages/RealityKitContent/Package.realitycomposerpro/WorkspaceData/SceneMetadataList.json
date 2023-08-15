@@ -1,0 +1,292 @@
+{
+  "1F76E91A-E554-4EBD-BBAD-BD45BD6BCE50" : {
+    "objectMetadataList" : [
+      [
+        "1F76E91A-E554-4EBD-BBAD-BD45BD6BCE50",
+        "Root",
+        "Dna",
+        "geom",
+        "realistic"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1F76E91A-E554-4EBD-BBAD-BD45BD6BCE50",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1F76E91A-E554-4EBD-BBAD-BD45BD6BCE50",
+        "Root",
+        "Dna"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1F76E91A-E554-4EBD-BBAD-BD45BD6BCE50",
+        "Root",
+        "Dna",
+        "geom",
+        "realistic",
+        "materials"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1F76E91A-E554-4EBD-BBAD-BD45BD6BCE50",
+        "Root",
+        "Dna",
+        "geom"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1F76E91A-E554-4EBD-BBAD-BD45BD6BCE50",
+        "Root",
+        "Dna",
+        "geom",
+        "realistic",
+        "geo"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1F76E91A-E554-4EBD-BBAD-BD45BD6BCE50",
+        "Root",
+        "Material"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "2AEE0EE7-1CA2-4C5A-8432-46840F36B2D6" : {
+    "objectMetadataList" : [
+      [
+        "2AEE0EE7-1CA2-4C5A-8432-46840F36B2D6",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "6A9BEDC9-4B57-4111-A74B-6714E21FAC9A" : {
+    "objectMetadataList" : [
+      [
+        "6A9BEDC9-4B57-4111-A74B-6714E21FAC9A",
+        "Root",
+        "Venus",
+        "geom"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "6A9BEDC9-4B57-4111-A74B-6714E21FAC9A",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "6A9BEDC9-4B57-4111-A74B-6714E21FAC9A",
+        "Root",
+        "Telescope",
+        "Telescope"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "6A9BEDC9-4B57-4111-A74B-6714E21FAC9A",
+        "Root",
+        "Venus"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "6A9BEDC9-4B57-4111-A74B-6714E21FAC9A",
+        "Root",
+        "Telescope"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "58FAF56F-B2F6-4DD9-837B-A5FE782B1AE8" : {
+    "objectMetadataList" : [
+      [
+        "58FAF56F-B2F6-4DD9-837B-A5FE782B1AE8",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "A7F33B2F-F1F4-4DAC-85C5-07E632C2BBFF" : {
+    "objectMetadataList" : [
+      [
+        "A7F33B2F-F1F4-4DAC-85C5-07E632C2BBFF",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "A7F33B2F-F1F4-4DAC-85C5-07E632C2BBFF",
+        "Root",
+        "Dna"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "A82673D4-E5B5-4321-841E-AFCECCCC8A05" : {
+    "objectMetadataList" : [
+      [
+        "A82673D4-E5B5-4321-841E-AFCECCCC8A05",
+        "Root",
+        "Toy_Robot",
+        "geom",
+        "realistic",
+        "materials"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "A82673D4-E5B5-4321-841E-AFCECCCC8A05",
+        "Root",
+        "Toy_Robot",
+        "geom"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "A82673D4-E5B5-4321-841E-AFCECCCC8A05",
+        "Root",
+        "Toy_Robot",
+        "geom",
+        "realistic"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "A82673D4-E5B5-4321-841E-AFCECCCC8A05",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "A82673D4-E5B5-4321-841E-AFCECCCC8A05",
+        "Root",
+        "Toy_Robot"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  },
+  "BE881291-FAEA-4E37-8670-DBA2795AB460" : {
+    "objectMetadataList" : [
+      [
+        "BE881291-FAEA-4E37-8670-DBA2795AB460",
+        "Root",
+        "Telescope",
+        "telescope_geo_grp",
+        "base_geo_grp",
+        "polySurface34"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BE881291-FAEA-4E37-8670-DBA2795AB460",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BE881291-FAEA-4E37-8670-DBA2795AB460",
+        "Root",
+        "Telescope",
+        "telescope_geo_grp",
+        "base_geo_grp",
+        "polySurface24"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BE881291-FAEA-4E37-8670-DBA2795AB460",
+        "Root",
+        "Telescope",
+        "telescope_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BE881291-FAEA-4E37-8670-DBA2795AB460",
+        "Root",
+        "Telescope"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "BE881291-FAEA-4E37-8670-DBA2795AB460",
+        "Root",
+        "Telescope",
+        "telescope_geo_grp",
+        "base_geo_grp"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  }
+}

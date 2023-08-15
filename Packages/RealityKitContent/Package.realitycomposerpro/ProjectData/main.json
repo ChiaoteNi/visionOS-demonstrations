@@ -1,0 +1,15 @@
+{
+  "pathsToIds" : {
+    "\/RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/MovingItem.usda" : "A7F33B2F-F1F4-4DAC-85C5-07E632C2BBFF",
+    "\/RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/Playground.usda" : "A82673D4-E5B5-4321-841E-AFCECCCC8A05",
+    "\/RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/Scene.usda" : "E9269BCD-FDDF-4504-863C-FE31C5B9DE9B",
+    "\/RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/StaticItem.usda" : "2AEE0EE7-1CA2-4C5A-8432-46840F36B2D6",
+    "\/RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/Untitled.usda" : "A14A8CD2-6070-46D8-BC66-990BF7D1B088",
+    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/MovingItem.usda" : "1F76E91A-E554-4EBD-BBAD-BD45BD6BCE50",
+    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/Planet.usda" : "6A9BEDC9-4B57-4111-A74B-6714E21FAC9A",
+    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/Robot.usdz" : "EB8D28AD-5C42-4A2D-B23C-F9F2E2050697",
+    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/Scene.usda" : "440CDE6A-A16F-4144-8BC0-6BCC7D086A2F",
+    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/StaticItem.usda" : "58FAF56F-B2F6-4DD9-837B-A5FE782B1AE8",
+    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/Telescope.usda" : "BE881291-FAEA-4E37-8670-DBA2795AB460"
+  }
+}

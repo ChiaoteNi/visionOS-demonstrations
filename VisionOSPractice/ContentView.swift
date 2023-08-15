@@ -12,8 +12,15 @@ import SwiftUI
 struct ContentView: View {
 
     var body: some View {
-        WindowBasedDemoView()
+//        // MARK: 2D
 //        ToolsView()
+//        WindowBasedDemo()
+
+        // MARK: 3D
+//        Model3DAndRealityViewDemo()
+//        InteractWithEntityDemo()
+//        AttachmentDemo()
+        AnimationDemo()
     }
 
 }

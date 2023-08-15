@@ -3,22 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		9304902B2A5FA913007103F5 /* ZoomInModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9304902A2A5FA913007103F5 /* ZoomInModifier.swift */; };
 		9304902D2A5FA91E007103F5 /* ZOffsetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9304902C2A5FA91E007103F5 /* ZOffsetModifier.swift */; };
 		9304902F2A5FAC28007103F5 /* GlassEffectForXrOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9304902E2A5FAC28007103F5 /* GlassEffectForXrOS.swift */; };
+		931817742A8BB3D70043E73A /* AnimationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931817732A8BB3D70043E73A /* AnimationDemo.swift */; };
+		9335CA962A8B57AA00EE7F21 /* Entity+Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9335CA952A8B57AA00EE7F21 /* Entity+Move.swift */; };
 		937D08DE2A4A504300A155BD /* VisionOSPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937D08DD2A4A504300A155BD /* VisionOSPracticeApp.swift */; };
 		937D08E02A4A504300A155BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937D08DF2A4A504300A155BD /* ContentView.swift */; };
 		937D08E42A4A504300A155BD /* ImageBasedLight.exr in Resources */ = {isa = PBXBuildFile; fileRef = 937D08E32A4A504300A155BD /* ImageBasedLight.exr */; };
 		937D08E62A4A504400A155BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 937D08E52A4A504400A155BD /* Assets.xcassets */; };
 		937D08E92A4A504400A155BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 937D08E82A4A504400A155BD /* Preview Assets.xcassets */; };
 		937D08F42A4A504400A155BD /* VisionOSPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937D08F32A4A504400A155BD /* VisionOSPracticeTests.swift */; };
+		93806CF02A8BA51B005BDFFE /* AttachmentDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93806CEF2A8BA51B005BDFFE /* AttachmentDemo.swift */; };
 		939FD3FF2A640B8500F5F78F /* XrOSBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939FD3FE2A640B8500F5F78F /* XrOSBackground.swift */; };
 		93CD493B2A88A35C00DFF412 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD49392A88A35C00DFF412 /* ToolsView.swift */; };
 		93CD493C2A88A35C00DFF412 /* WindowBasedDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD493A2A88A35C00DFF412 /* WindowBasedDemo.swift */; };
+		93CD493E2A89D27B00DFF412 /* Model3DAndRealityViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD493D2A89D27B00DFF412 /* Model3DAndRealityViewDemo.swift */; };
+		93CD49692A8A04AA00DFF412 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 93CD49682A8A04AA00DFF412 /* RealityKitContent */; };
+		93E7AFE42A8A984400DABEE5 /* InteractWithEntityDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E7AFE32A8A984400DABEE5 /* InteractWithEntityDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,8 @@
 		9304902A2A5FA913007103F5 /* ZoomInModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomInModifier.swift; sourceTree = "<group>"; };
 		9304902C2A5FA91E007103F5 /* ZOffsetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZOffsetModifier.swift; sourceTree = "<group>"; };
 		9304902E2A5FAC28007103F5 /* GlassEffectForXrOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassEffectForXrOS.swift; sourceTree = "<group>"; };
+		931817732A8BB3D70043E73A /* AnimationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDemo.swift; sourceTree = "<group>"; };
+		9335CA952A8B57AA00EE7F21 /* Entity+Move.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Entity+Move.swift"; path = "../../../../../Sample Code/Topics/VisionOS/Apple/HelloWorld/World/Entities/Entity+Move.swift"; sourceTree = "<group>"; };
 		937D08D62A4A504300A155BD /* VisionOSPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionOSPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		937D08DD2A4A504300A155BD /* VisionOSPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOSPracticeApp.swift; sourceTree = "<group>"; };
 		937D08DF2A4A504300A155BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,10 +52,13 @@
 		937D08EA2A4A504400A155BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		937D08EF2A4A504400A155BD /* VisionOSPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisionOSPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		937D08F32A4A504400A155BD /* VisionOSPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOSPracticeTests.swift; sourceTree = "<group>"; };
+		93806CEF2A8BA51B005BDFFE /* AttachmentDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentDemo.swift; sourceTree = "<group>"; };
 		939FD3FE2A640B8500F5F78F /* XrOSBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XrOSBackground.swift; sourceTree = "<group>"; };
-		93C081A02A63D9450000CED1 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		93CD49392A88A35C00DFF412 /* ToolsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
 		93CD493A2A88A35C00DFF412 /* WindowBasedDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowBasedDemo.swift; sourceTree = "<group>"; };
+		93CD493D2A89D27B00DFF412 /* Model3DAndRealityViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model3DAndRealityViewDemo.swift; sourceTree = "<group>"; };
+		93CD49662A89E32800DFF412 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		93E7AFE32A8A984400DABEE5 /* InteractWithEntityDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractWithEntityDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93CD49692A8A04AA00DFF412 /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				935ADEE52A889DBA005D6543 /* Demonstrations based on Windows */,
+				93806CEE2A8BA0C1005BDFFE /* Demonstrations related to 3D Models */,
 				930490292A5FA904007103F5 /* Modifier */,
 			);
 			path = UIs;
@@ -95,6 +108,14 @@
 				937D08E52A4A504400A155BD /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		9335CA942A8B579D00EE7F21 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9335CA952A8B57AA00EE7F21 /* Entity+Move.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		935ADEE52A889DBA005D6543 /* Demonstrations based on Windows */ = {
@@ -143,6 +164,7 @@
 		937D08D92A4A504300A155BD /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				93CD49662A89E32800DFF412 /* RealityKitContent */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
@@ -161,6 +183,17 @@
 				937D08F32A4A504400A155BD /* VisionOSPracticeTests.swift */,
 			);
 			path = VisionOSPracticeTests;
+			sourceTree = "<group>";
+		};
+		93806CEE2A8BA0C1005BDFFE /* Demonstrations related to 3D Models */ = {
+			isa = PBXGroup;
+			children = (
+				93CD493D2A89D27B00DFF412 /* Model3DAndRealityViewDemo.swift */,
+				93E7AFE32A8A984400DABEE5 /* InteractWithEntityDemo.swift */,
+				93806CEF2A8BA51B005BDFFE /* AttachmentDemo.swift */,
+				931817732A8BB3D70043E73A /* AnimationDemo.swift */,
+			);
+			path = "Demonstrations related to 3D Models";
 			sourceTree = "<group>";
 		};
 		93CD49382A88A30200DFF412 /* Recovered References */ = {
@@ -187,6 +220,7 @@
 			);
 			name = VisionOSPractice;
 			packageProductDependencies = (
+				93CD49682A8A04AA00DFF412 /* RealityKitContent */,
 			);
 			productName = VisionOSPractice;
 			productReference = 937D08D62A4A504300A155BD /* VisionOSPractice.app */;
@@ -240,6 +274,9 @@
 				"zh-Hant",
 			);
 			mainGroup = 937D08CD2A4A504300A155BD;
+			packageReferences = (
+				93CD49672A8A04AA00DFF412 /* XCLocalSwiftPackageReference "Packages/RealityKitContent" */,
+			);
 			productRefGroup = 937D08D72A4A504300A155BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -275,12 +312,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				931817742A8BB3D70043E73A /* AnimationDemo.swift in Sources */,
 				9304902D2A5FA91E007103F5 /* ZOffsetModifier.swift in Sources */,
+				9335CA962A8B57AA00EE7F21 /* Entity+Move.swift in Sources */,
 				9304902F2A5FAC28007103F5 /* GlassEffectForXrOS.swift in Sources */,
+				93CD493E2A89D27B00DFF412 /* Model3DAndRealityViewDemo.swift in Sources */,
 				937D08E02A4A504300A155BD /* ContentView.swift in Sources */,
 				937D08DE2A4A504300A155BD /* VisionOSPracticeApp.swift in Sources */,
+				93E7AFE42A8A984400DABEE5 /* InteractWithEntityDemo.swift in Sources */,
 				9304902B2A5FA913007103F5 /* ZoomInModifier.swift in Sources */,
 				939FD3FF2A640B8500F5F78F /* XrOSBackground.swift in Sources */,
+				93806CF02A8BA51B005BDFFE /* AttachmentDemo.swift in Sources */,
 				93CD493C2A88A35C00DFF412 /* WindowBasedDemo.swift in Sources */,
 				93CD493B2A88A35C00DFF412 /* ToolsView.swift in Sources */,
 			);
@@ -553,6 +595,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		93CD49672A8A04AA00DFF412 /* XCLocalSwiftPackageReference "Packages/RealityKitContent" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/RealityKitContent;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		93CD49682A8A04AA00DFF412 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 937D08CE2A4A504300A155BD /* Project object */;
 }

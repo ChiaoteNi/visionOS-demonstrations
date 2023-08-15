@@ -1,0 +1,306 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    def "Dna" (
+        active = true
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        customData = {
+            float3 rotationEulerHint = (0.044014122, 0.0055223503, 6.033593)
+        }
+        prepend references = @Dna.usdz@
+    )
+    {
+        rel material:binding = </Root/Honey_Mustard_Merino_Wool> (
+            bindMaterialAs = "strongerThanDescendants"
+        )
+        quatf xformOp:orient = (0.9919715, 0.022177652, 0, -0.12450172)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def RealityKitComponent "InputTarget"
+        {
+            uniform token info:id = "RealityKit.InputTarget"
+        }
+
+        def RealityKitComponent "VFXEmitter"
+        {
+            uniform token info:id = "RealityKit.VFXEmitter"
+
+            def RealityKitStruct "currentState"
+            {
+                token birthLocation = "Volume"
+                int64 burstCount = 30
+                token emitterShape = "Torus"
+                bool isLocal = 0
+                bool loops = 1
+                bool spawnInheritParentColor = 0
+                token spawnOccasion = "OnBirth"
+
+                def RealityKitStruct "mainEmitter"
+                {
+                    token billboardMode = "Billboard"
+                    float colorEvolutionPower = 5
+                    float dampingFactor = 6
+                    float4 endColorA = (0.001300633, 0.032593306, 0.7681514, 1)
+                    float4 endColorB = (1, 1, 1, 1)
+                    bool isLightingEnabled = 0
+                    token opacityOverLife = "QuickFadeInOut"
+                    float particleBounce = 0.1
+                    float particleFriction = 0
+                    double particleLifeSpan = 2
+                    float particleMass = 5
+                    float4 startColorA = (1, 0.29358652, 0, 1)
+                    float4 startColorB = (1, 1, 1, 1)
+                    bool useEndColor = 1
+                    bool useEndColorRange = 1
+                    bool useStartColorRange = 1
+                }
+
+                def RealityKitStruct "spawnedEmitter"
+                {
+                    float particleBounce = 0
+                    float particleFriction = 0
+                }
+            }
+        }
+
+        def RealityKitComponent "CharacterController"
+        {
+            uniform token info:id = "RealityKit.CharacterController"
+
+            def RealityKitStruct "m_controllerDesc"
+            {
+                float3 extents = (1, 30, 0)
+                float skinWidth = 0.5
+
+                def RealityKitStruct "collisionFilter"
+                {
+                    uint group = 1
+                }
+            }
+        }
+
+        over "geom"
+        {
+            over "realistic"
+            {
+                over "materials"
+                {
+                    over "usdpreviewsurface3sg"
+                    {
+                        string inputs:dna_realistic_ao_1:varname (
+                            customData = {
+                                dictionary realitykit = {
+                                    float2 positionInSubgraph = (284.5, 883.5)
+                                    float2 sizeInSubgraph = (240, 53)
+                                }
+                            }
+                        )
+                        string inputs:dna_realistic_bc_1:varname (
+                            customData = {
+                                dictionary realitykit = {
+                                    float2 positionInSubgraph = (585.5, 883.5)
+                                    float2 sizeInSubgraph = (241, 53)
+                                }
+                            }
+                        )
+                        string inputs:dna_realistic_n_1:varname (
+                            customData = {
+                                dictionary realitykit = {
+                                    float2 positionInSubgraph = (878.5, 883.5)
+                                    float2 sizeInSubgraph = (233, 53)
+                                }
+                            }
+                        )
+                        string inputs:dna_realistic_r_1:varname (
+                            customData = {
+                                dictionary realitykit = {
+                                    float2 positionInSubgraph = (1168.5, 883.5)
+                                    float2 sizeInSubgraph = (230, 53)
+                                }
+                            }
+                        )
+                        token outputs:realitykit:vertex
+                        float2 ui:nodegraph:realitykit:subgraphOutputs:pos = (1357, 287.5)
+                        float2 ui:nodegraph:realitykit:subgraphOutputs:size = (182, 99)
+
+                        over "dna_realistic_01_mat_mtlx"
+                        {
+                            float2 ui:nodegraph:node:pos = (1096.5, 287.5)
+                            float2 ui:nodegraph:node:size = (219, 199)
+                        }
+
+                        over "dna_realistic_n_1_mtlx"
+                        {
+                            float2 ui:nodegraph:node:pos = (304.5, 528)
+                            float2 ui:nodegraph:node:size = (194, 199)
+                        }
+
+                        over "Lookup_st"
+                        {
+                            float2 ui:nodegraph:node:pos = (72.5, 332.5)
+                            float2 ui:nodegraph:node:size = (145, 127)
+                        }
+
+                        over "dna_realistic_n_1_mtlx_scale"
+                        {
+                            float2 ui:nodegraph:node:pos = (565, 528)
+                            float2 ui:nodegraph:node:size = (61, 36)
+                        }
+
+                        over "dna_realistic_n_1_mtlx_offset"
+                        {
+                            float2 ui:nodegraph:node:pos = (826.5, 519.5)
+                            float2 ui:nodegraph:node:size = (63, 37)
+                        }
+
+                        over "dna_realistic_bc_1_mtlx"
+                        {
+                            float2 ui:nodegraph:node:pos = (565, 99.5)
+                            float2 ui:nodegraph:node:size = (202, 199)
+                        }
+
+                        over "dna_realistic_ao_1_mtlx"
+                        {
+                            float2 ui:nodegraph:node:pos = (826.5, 697.5)
+                            float2 ui:nodegraph:node:size = (201, 199)
+                        }
+
+                        over "dna_realistic_r_1_mtlx"
+                        {
+                            float2 ui:nodegraph:node:pos = (304.5, 269)
+                            float2 ui:nodegraph:node:size = (191, 199)
+                        }
+                    }
+                }
+            }
+        }
+
+        def RealityKitComponent "MotionState"
+        {
+            uniform token info:id = "RealityKit.MotionState"
+            float3 m_userSetAngularVelocity = (40, 40, 30)
+            uint m_userSetAngularVelocityVersion = 1
+            float3 m_userSetLinearVelocity = (4, 5, 6)
+            uint m_userSetLinearVelocityVersion = 1
+        }
+
+        def RealityKitComponent "RigidBody"
+        {
+            uniform token info:id = "RealityKit.RigidBody"
+            bool isCCDEnabled = 1
+            token motionType = "Static"
+
+            def RealityKitStruct "massFrame"
+            {
+                def RealityKitStruct "m_pose"
+                {
+                }
+            }
+
+            def RealityKitStruct "material"
+            {
+            }
+        }
+
+        def RealityKitComponent "Collider"
+        {
+            uint group = 1
+            uniform token info:id = "RealityKit.Collider"
+            uint mask = 4294967295
+            token type = "Trigger"
+
+            def RealityKitStruct "Shape"
+            {
+                float3 extent = (0.028, 0.3583202, 0.02802694)
+                token shapeType = "Box"
+            }
+        }
+    }
+
+    def "Honey_Mustard_Merino_Wool" (
+        active = true
+        prepend references = @HoneyMustardMerinoWool.usdz@
+    )
+    {
+        float2 ui:nodegraph:realitykit:subgraphOutputs:size = (193, 99)
+
+        over "Basecolor"
+        {
+            float2 ui:nodegraph:node:size = (149, 199)
+        }
+
+        over "Roughness"
+        {
+            float2 ui:nodegraph:node:size = (149, 199)
+        }
+
+        over "Metallic"
+        {
+            float2 ui:nodegraph:node:size = (149, 199)
+        }
+
+        over "MaterialXPreviewSurface"
+        {
+            float2 ui:nodegraph:node:size = (208, 199)
+        }
+
+        over "add"
+        {
+            float2 ui:nodegraph:node:size = (63, 37)
+        }
+
+        over "multiply"
+        {
+            float2 ui:nodegraph:node:size = (61, 36)
+        }
+
+        over "Normal"
+        {
+            float2 ui:nodegraph:node:size = (149, 199)
+        }
+    }
+
+    def Material "Material"
+    {
+        prepend token outputs:mtlx:surface.connect = </Root/Material/MaterialXPreviewSurface.outputs:out>
+        token outputs:realitykit:vertex
+        string[] ui:nodegraph:realitykit:node:attributesShowingChildren = []
+        float2 ui:nodegraph:realitykit:subgraphOutputs:pos = (359, 99.5)
+        float2 ui:nodegraph:realitykit:subgraphOutputs:size = (182, 99)
+        int ui:nodegraph:realitykit:subgraphOutputs:stackingOrder = 1
+
+        def Shader "MaterialXPreviewSurface"
+        {
+            uniform token info:id = "ND_UsdPreviewSurface_surfaceshader"
+            token outputs:out
+            float2 ui:nodegraph:node:pos = (104, 99.5)
+            float2 ui:nodegraph:node:size = (208, 307)
+            int ui:nodegraph:node:stackingOrder = 6
+            string[] ui:nodegraph:realitykit:node:attributesShowingChildren = ["Advanced", "inputs:clearcoatRoughness"]
+        }
+    }
+
+    def Xform "Transform" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        customData = {
+            float3 rotationEulerHint = (0.026177406, 0.026180508, 0.026181556)
+        }
+    )
+    {
+        rel material:binding = </Root/Honey_Mustard_Merino_Wool> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        quatf xformOp:orient = (0.99974525, 0.012913964, 0.013258145, 0.012916066)
+        float3 xformOp:translate = (0.015, 0.015, 0.015)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+}
+

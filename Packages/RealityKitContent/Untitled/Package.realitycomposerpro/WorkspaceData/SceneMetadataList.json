@@ -1,0 +1,23 @@
+{
+  "0A37FBF0-3940-49CD-968F-9BA27972B75A" : {
+    "objectMetadataList" : [
+      [
+        "0A37FBF0-3940-49CD-968F-9BA27972B75A",
+        "Root",
+        "Sphere"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "0A37FBF0-3940-49CD-968F-9BA27972B75A",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  }
+}
