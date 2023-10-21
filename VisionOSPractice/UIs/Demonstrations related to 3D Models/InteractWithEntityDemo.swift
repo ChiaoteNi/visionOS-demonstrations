@@ -34,6 +34,9 @@ struct InteractWithEntityDemo: View {
 
 //                // Method 1. Add the entire scene to content
 //                content.add(scene)
+//                // The code below is identical to the one on line 43
+//                // This is just preparation for the scenario to demonstrate the update with Method 1.
+//                neptune = scene.findEntity(named: "Neptune")
 
                 // Method 2. find each entity with name and decide which one should be added
                 venus = scene.findEntity(named: "Venus")
@@ -44,10 +47,6 @@ struct InteractWithEntityDemo: View {
                 [venus, neptune, telescope, telescope_1]
                     .compactMap { $0 }
                     .forEach { content.add($0) }
-
-//                // The code below is identical to the one on line 40
-//                // This is just preparation for the scenario to demonstrate the update with Method 1.
-//                neptune = scene.findEntity(named: "Neptune")
             }
         } update: { content in
             let rotation = makeRotation(with: currentDate.timeIntervalSince1970)
@@ -65,8 +64,10 @@ struct InteractWithEntityDemo: View {
         .onReceive(timer, perform: { input in
             currentDate = input
         })
+        // Case 1: Drag gesture
         .gesture(dragEntity())
-        .gesture(tapEntityToRotation())
+//        // Case 2: Tap gesture
+//        .gesture(tapEntityToRotation())
         .scaledToFit()
     }
 

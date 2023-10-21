@@ -47,18 +47,35 @@ struct AttachmentDemo: View {
             }
 
         } attachments: {
+//            // NOTE: before Xcode 15 beta 8
 //            Color.orange
 //                .frame(width: 50, height: 150)
 //                .tag(Name.neptune)
-            Text(verbatim: Name.neptune)
-                .font(.system(size: 24))
-                .glassBackgroundEffect()
-                .tag(Name.neptune)
+//            Text(verbatim: Name.neptune)
+//                .font(.system(size: 24))
+//                .glassBackgroundEffect()
+//                .tag(Name.neptune)
+//
+//            Text(verbatim: Name.venus)
+//                .font(.system(size: 36))
+//                .glassBackgroundEffect()
+//                .tag(Name.venus)
 
-            Text(verbatim: Name.venus)
-                .font(.system(size: 36))
-                .glassBackgroundEffect()
-                .tag(Name.venus)
+            // NOTE: after Xcode 15 beta 8
+//            Attachment(id: Name.neptune) {
+//                Color.orange
+//                    .frame(width: 50, height: 150)
+//            }
+            Attachment(id: Name.neptune) {
+                Text(verbatim: Name.neptune)
+                    .font(.system(size: 24))
+                    .glassBackgroundEffect()
+            }
+            Attachment(id: Name.venus) {
+                Text(verbatim: Name.venus)
+                    .font(.system(size: 36))
+                    .glassBackgroundEffect()
+            }
         }
         .gesture(
             // Attempt to drag the entity, and you will observe the attachment moving along with the entity.
