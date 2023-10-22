@@ -12,15 +12,21 @@ import SwiftUI
 struct ContentView: View {
 
     var body: some View {
-//        // MARK: 2D
+//        // MARK: Part I - 2D
 //        ToolsView()
 //        WindowBasedDemo()
 
-        // MARK: 3D
+//        // MARK: Part II - 3D
 //        Model3DAndRealityViewDemo()
 //        InteractWithEntityDemo()
 //        AttachmentDemo()
-        AnimationDemo()
+//        AnimationDemo()
+
+        // MARK: Part III - Advanced cases
+#if os(xrOS)
+//        Create3DPlanesDemo()
+        ThreeDimensionCanvasDemo()
+#endif
     }
 
 }

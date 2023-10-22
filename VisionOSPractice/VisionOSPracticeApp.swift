@@ -7,19 +7,34 @@
 
 import SwiftUI
 
+final class GlobalStateStore: ObservableObject {
+    @Published var currentColor = CGColor(red: 0, green: 0, blue: 0, alpha: 1)
+}
+
 @main
 struct VisionOSPracticeApp: App {
+
+    @StateObject var globalStateStore = GlobalStateStore()
+
     var body: some Scene {
-        WindowGroup {
+        WindowGroup("main", id: "main") {
             ContentView()
+                .environmentObject(globalStateStore)
         }
         #if os(xrOS)
         .windowStyle(.volumetric)
         #endif
-//        .defaultSize(Size3D(width: 100, height: 100, depth: 100), in: .feet)
 
-//        ImmersiveSpace(id: "ImmersiveSpace") {
-////            ImmersiveView()
-//        }.immersionStyle(selection: .constant(.progressive), in: .progressive)
+        // This window won't display until you call @Environment(\.openWindow) var openWindow
+        WindowGroup(id: "sidePanel", for: String.self) { value in
+            switch value.wrappedValue {
+            case "colorPicker":
+                TDColorPicker()
+                    .environmentObject(globalStateStore)
+            default:
+                EmptyView()
+            }
+        }
+        .windowStyle(.plain)
     }
 }
