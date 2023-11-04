@@ -2,7 +2,7 @@
 - This project is designed as a demonstration with the purpose of showcasing a diverse range of features and APIs related to app development for VisionOS
 - The content is organized into several distinct parts, each focusing on different aspects. 
   The series will be released incrementally after several iOS@Taipei meetup events.
-- As of now, the project has progressed to Part II.
+- As of now, the project has progressed to Part III.
 
 ### Part I:
   - There's a Notes.md file that includes the introductions regards to developing the app for the visionOS.
@@ -32,3 +32,55 @@
         Please try moving the entity, and you'll notice that the attachment moves with it.
     - `AnimationDemo`:
       - To demonstrate how to apply animation to an entity in RealityView
+### Part III
+  - Introduce some features of 3D space drawing
+    - `Create3DPlanesDemo`:
+      - It's a pre-practice demonstration for the `ThreeDimensionCanvasDemo`.
+      - In this demonstration, I showed how to create a place in the visionOS, and this implementation is used for making strokes in the next demonstration, `ThreeDimensionCanvasDemo`.
+      <table>
+        <tr>
+          <th>
+          Simplest Plate: Triangle
+          </th>
+          <th>
+          Create a shape with triangles
+          </th>
+        </tr>
+        <tr>
+        <tr>
+          <th>
+          <img width="817" alt="Screenshot 2023-11-05 at 7 38 14 AM" src="https://github.com/ChiaoteNi/visionOS-demonstrations/assets/40178645/45f1ae74-a6e3-4800-aca3-70f00afac006">
+          </th>
+          <th>
+          <img width="817" alt="Screenshot 2023-11-05 at 7 38 49 AM" src="https://github.com/ChiaoteNi/visionOS-demonstrations/assets/40178645/45ae3f96-a386-49d3-87f1-2b6d86e6fc6a">
+          </th>
+        </tr>
+        <tr>
+      </table>
+    - `ThreeDimensionCanvasDemo`:
+      - Demonstrations for showing how to draw lines and points in a spatial space, which include:
+        - Create an entity without a USDZ file
+        - SpatialEventGesture
+        - Update mesh for an existing entity
+        - Crate strokes in a spatial space
+      - Also, I showed how to use multiple windows to create a separate control panel
+      <table>
+        <tr>
+          <th>
+          Points
+          </th>
+          <th>
+          Strokes
+          </th>
+        </tr>
+        <tr>
+        <tr>
+          <th>
+          <img width="817" alt="Screenshot 2023-11-05 at 7 44 03 AM" src="https://github.com/ChiaoteNi/visionOS-demonstrations/assets/40178645/6839d8ab-7aef-4894-a2e6-0e4dd459fd3d">
+          </th>
+          <th>
+          <img width="817" alt="Screenshot 2023-11-05 at 7 41 24 AM" src="https://github.com/ChiaoteNi/visionOS-demonstrations/assets/40178645/0e29baaa-b58c-4019-a34d-9a51f96c5b2e">
+          </th>
+        </tr>
+        <tr>
+      </table>
