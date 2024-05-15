@@ -8,7 +8,7 @@
 import SwiftUI
 import RealityKit
 
-#if os(xrOS)
+#if os(visionOS)
 struct Create3DPlanesDemo: View {
     var body: some View {
         RealityView { content in

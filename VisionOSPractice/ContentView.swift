@@ -23,7 +23,7 @@ struct ContentView: View {
 //        AnimationDemo()
 
         // MARK: Part III - Advanced cases
-#if os(xrOS)
+#if os(visionOS)
 //        Create3DPlanesDemo()
         ThreeDimensionCanvasDemo()
 #endif

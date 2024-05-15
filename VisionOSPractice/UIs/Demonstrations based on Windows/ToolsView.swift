@@ -17,7 +17,7 @@ private struct ToolsBarItemModifier: ViewModifier {
             .background(.ultraThinMaterial)
             .clipShape(Circle())
             .hoverEffect()
-            #if os(xrOS)
+            #if os(visionOS)
             .offset(z: -1)
             #endif
     }

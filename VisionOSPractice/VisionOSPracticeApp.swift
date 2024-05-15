@@ -21,7 +21,7 @@ struct VisionOSPracticeApp: App {
             ContentView()
                 .environmentObject(globalStateStore)
         }
-        #if os(xrOS)
+        #if os(visionOS)
         .windowStyle(.volumetric)
         #endif
 

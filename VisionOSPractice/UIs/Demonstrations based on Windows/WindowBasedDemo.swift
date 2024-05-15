@@ -19,7 +19,7 @@ struct WindowBasedDemo: View {
             navigationSplitView()
             ToolsView()
             // Method 1: `if os(xcOS)` every where
-//                #if os(xrOS)
+//                #if os(visionOS)
 //                .offset(z: 100)
 //                #endif
             // Method 2: create a custom ViewModifier for this
@@ -27,12 +27,12 @@ struct WindowBasedDemo: View {
                 .offset(x: 600)
                 .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
         }
-//        #if os(xrOS)
+//        #if os(visionOS)
 //        .glassBackgroundEffect()
 //        #endif
         .modifier(GlassEffectForXrOS())
-#if os(xrOS)
-        .ornament(attachmentAnchor: .scene(alignment: .bottom), contentAlignment: .center) {
+#if os(visionOS)
+        .ornament(attachmentAnchor: .scene(.bottom), contentAlignment: .center) {
             VStack {
                 Text("Detalle del personaje")
             }
@@ -40,7 +40,7 @@ struct WindowBasedDemo: View {
             .background(.green)
             .glassBackgroundEffect()
         }
-        .ornament(attachmentAnchor: .scene(alignment: .topLeading)) {
+        .ornament(attachmentAnchor: .scene(.topLeading)) {
             VStack {
                 Text("Detalle del personaje")
             }
@@ -61,7 +61,7 @@ struct WindowBasedDemo: View {
             .overlay {
                 Text("Hello, World!")
                     .background(.ultraThinMaterial)
-//                    #if os(xrOS)
+//                    #if os(visionOS)
 //                    .offset(z: 50)
 //                    #endif
                     .modifier(ZOffsetForXrOS(offset: 50))
@@ -70,7 +70,7 @@ struct WindowBasedDemo: View {
             .overlay {
                 Text("Hello, World!")
                     .background(.ultraThinMaterial)
-//                    #if os(xrOS)
+//                    #if os(visionOS)
 //                    .offset(z: 100)
 //                    #endif
                     .modifier(ZOffsetForXrOS(offset: 100))
@@ -85,14 +85,14 @@ struct WindowBasedDemo: View {
                 .background(.red)
             Text("Hello, World!")
                 .background(.red)
-//                #if os(xrOS)
+//                #if os(visionOS)
 //                .offset(z: 50)
 //                #endif
                 .modifier(ZOffsetForXrOS(offset: 50))
                 .modifier(OffsetLeft())
             Text("Hello, World!")
                 .background(.red)
-//                #if os(xrOS)
+//                #if os(visionOS)
 //                .offset(z: 100)
 //                #endif
                 .modifier(ZOffsetForXrOS(offset: 100))

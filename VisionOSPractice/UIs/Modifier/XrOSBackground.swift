@@ -12,7 +12,7 @@ struct XrOSBackground: ViewModifier {
 
     func body(content: Content) -> some View {
         content
-        #if os(xrOS)
+        #if os(visionOS)
             .background(.red) // Vision Pro
         #else
             .background(.blue) // Vision Pro (Design for iPad)

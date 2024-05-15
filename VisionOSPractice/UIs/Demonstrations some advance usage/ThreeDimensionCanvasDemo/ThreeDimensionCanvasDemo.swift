@@ -8,7 +8,7 @@
 import SwiftUI
 import RealityKit
 
-#if os(xrOS)
+#if os(visionOS)
 struct ThreeDimensionCanvasDemo: View {
 
     @Environment(\.openWindow) var openWindow
