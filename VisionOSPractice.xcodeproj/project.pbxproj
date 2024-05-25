@@ -23,9 +23,16 @@
 		937D08E92A4A504400A155BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 937D08E82A4A504400A155BD /* Preview Assets.xcassets */; };
 		937D08F42A4A504400A155BD /* VisionOSPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937D08F32A4A504400A155BD /* VisionOSPracticeTests.swift */; };
 		93806CF02A8BA51B005BDFFE /* AttachmentDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93806CEF2A8BA51B005BDFFE /* AttachmentDemo.swift */; };
+		939698312BF9F1FB003FBEBF /* ImmersiveDemoEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939698302BF9F1FB003FBEBF /* ImmersiveDemoEntry.swift */; };
+		939698342BF9FDC2003FBEBF /* ImmersiveDoodleDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939698332BF9FDC2003FBEBF /* ImmersiveDoodleDemo.swift */; };
 		939FD3FF2A640B8500F5F78F /* XrOSBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939FD3FE2A640B8500F5F78F /* XrOSBackground.swift */; };
 		93A006722AE51AA000940D1C /* TDColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A006712AE51AA000940D1C /* TDColorPicker.swift */; };
 		93A006752AE6B8AB00940D1C /* Create3DPlanesDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A006742AE6B8AB00940D1C /* Create3DPlanesDemo.swift */; };
+		93B3418D2BFA594D009A7D97 /* ImmersiveDoodleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B3418C2BFA594D009A7D97 /* ImmersiveDoodleInteractor.swift */; };
+		93B341922BFB907C009A7D97 /* BasicStrokeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B341912BFB907C009A7D97 /* BasicStrokeGenerator.swift */; };
+		93B341942BFB90AD009A7D97 /* StrokeMeshGenerating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B341932BFB90AD009A7D97 /* StrokeMeshGenerating.swift */; };
+		93B3419A2BFBA6D6009A7D97 /* CylinderStrokeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B341992BFBA6D6009A7D97 /* CylinderStrokeGenerator.swift */; };
+		93B3419C2BFBA814009A7D97 /* RingStrokeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B3419B2BFBA814009A7D97 /* RingStrokeGenerator.swift */; };
 		93CD493B2A88A35C00DFF412 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD49392A88A35C00DFF412 /* ToolsView.swift */; };
 		93CD493C2A88A35C00DFF412 /* WindowBasedDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD493A2A88A35C00DFF412 /* WindowBasedDemo.swift */; };
 		93CD493E2A89D27B00DFF412 /* Model3DAndRealityViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD493D2A89D27B00DFF412 /* Model3DAndRealityViewDemo.swift */; };
@@ -63,9 +70,16 @@
 		937D08EF2A4A504400A155BD /* VisionOSPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisionOSPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		937D08F32A4A504400A155BD /* VisionOSPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOSPracticeTests.swift; sourceTree = "<group>"; };
 		93806CEF2A8BA51B005BDFFE /* AttachmentDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentDemo.swift; sourceTree = "<group>"; };
+		939698302BF9F1FB003FBEBF /* ImmersiveDemoEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveDemoEntry.swift; sourceTree = "<group>"; };
+		939698332BF9FDC2003FBEBF /* ImmersiveDoodleDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveDoodleDemo.swift; sourceTree = "<group>"; };
 		939FD3FE2A640B8500F5F78F /* XrOSBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XrOSBackground.swift; sourceTree = "<group>"; };
 		93A006712AE51AA000940D1C /* TDColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDColorPicker.swift; sourceTree = "<group>"; };
 		93A006742AE6B8AB00940D1C /* Create3DPlanesDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Create3DPlanesDemo.swift; sourceTree = "<group>"; };
+		93B3418C2BFA594D009A7D97 /* ImmersiveDoodleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveDoodleInteractor.swift; sourceTree = "<group>"; };
+		93B341912BFB907C009A7D97 /* BasicStrokeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicStrokeGenerator.swift; sourceTree = "<group>"; };
+		93B341932BFB90AD009A7D97 /* StrokeMeshGenerating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeMeshGenerating.swift; sourceTree = "<group>"; };
+		93B341992BFBA6D6009A7D97 /* CylinderStrokeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CylinderStrokeGenerator.swift; sourceTree = "<group>"; };
+		93B3419B2BFBA814009A7D97 /* RingStrokeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingStrokeGenerator.swift; sourceTree = "<group>"; };
 		93CD49392A88A35C00DFF412 /* ToolsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
 		93CD493A2A88A35C00DFF412 /* WindowBasedDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowBasedDemo.swift; sourceTree = "<group>"; };
 		93CD493D2A89D27B00DFF412 /* Model3DAndRealityViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model3DAndRealityViewDemo.swift; sourceTree = "<group>"; };
@@ -129,6 +143,7 @@
 				935ADEE52A889DBA005D6543 /* Demonstrations based on Windows */,
 				93806CEE2A8BA0C1005BDFFE /* Demonstrations related to 3D Models */,
 				930A52402AE3AE570096B49B /* Demonstrations some advance usage */,
+				9396982F2BF9F1A0003FBEBF /* Demonstrations associated to the immersive scene */,
 				930490292A5FA904007103F5 /* Modifier */,
 			);
 			path = UIs;
@@ -230,6 +245,25 @@
 			path = "Demonstrations related to 3D Models";
 			sourceTree = "<group>";
 		};
+		9396982F2BF9F1A0003FBEBF /* Demonstrations associated to the immersive scene */ = {
+			isa = PBXGroup;
+			children = (
+				939698302BF9F1FB003FBEBF /* ImmersiveDemoEntry.swift */,
+				939698322BF9FDA5003FBEBF /* Doodle */,
+			);
+			path = "Demonstrations associated to the immersive scene";
+			sourceTree = "<group>";
+		};
+		939698322BF9FDA5003FBEBF /* Doodle */ = {
+			isa = PBXGroup;
+			children = (
+				939698332BF9FDC2003FBEBF /* ImmersiveDoodleDemo.swift */,
+				93B3418C2BFA594D009A7D97 /* ImmersiveDoodleInteractor.swift */,
+				93B341902BFB9056009A7D97 /* StrokeGenerator */,
+			);
+			path = Doodle;
+			sourceTree = "<group>";
+		};
 		93A006702AE51A9400940D1C /* ColorPicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +278,17 @@
 				93A006742AE6B8AB00940D1C /* Create3DPlanesDemo.swift */,
 			);
 			path = MakePlatesInThreeDimensionSpaceDemo;
+			sourceTree = "<group>";
+		};
+		93B341902BFB9056009A7D97 /* StrokeGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				93B341932BFB90AD009A7D97 /* StrokeMeshGenerating.swift */,
+				93B341912BFB907C009A7D97 /* BasicStrokeGenerator.swift */,
+				93B3419B2BFBA814009A7D97 /* RingStrokeGenerator.swift */,
+				93B341992BFBA6D6009A7D97 /* CylinderStrokeGenerator.swift */,
+			);
+			path = StrokeGenerator;
 			sourceTree = "<group>";
 		};
 		93CD49382A88A30200DFF412 /* Recovered References */ = {
@@ -363,24 +408,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				931817742A8BB3D70043E73A /* AnimationDemo.swift in Sources */,
+				93B3419A2BFBA6D6009A7D97 /* CylinderStrokeGenerator.swift in Sources */,
 				93A006752AE6B8AB00940D1C /* Create3DPlanesDemo.swift in Sources */,
 				93A006722AE51AA000940D1C /* TDColorPicker.swift in Sources */,
+				939698312BF9F1FB003FBEBF /* ImmersiveDemoEntry.swift in Sources */,
 				930A52422AE3B2230096B49B /* ThreeDimensionCanvasDemo.swift in Sources */,
 				9304902D2A5FA91E007103F5 /* ZOffsetModifier.swift in Sources */,
+				93B341922BFB907C009A7D97 /* BasicStrokeGenerator.swift in Sources */,
 				9335CA962A8B57AA00EE7F21 /* Entity+Move.swift in Sources */,
+				939698342BF9FDC2003FBEBF /* ImmersiveDoodleDemo.swift in Sources */,
 				930A52472AE420A40096B49B /* ThreeDimensionCanvasInteractor.swift in Sources */,
 				9304902F2A5FAC28007103F5 /* GlassEffectForXrOS.swift in Sources */,
 				9352EEE02AE7E60400479711 /* Array+Fluent.swift in Sources */,
 				93CD493E2A89D27B00DFF412 /* Model3DAndRealityViewDemo.swift in Sources */,
 				937D08E02A4A504300A155BD /* ContentView.swift in Sources */,
 				937D08DE2A4A504300A155BD /* VisionOSPracticeApp.swift in Sources */,
+				93B3418D2BFA594D009A7D97 /* ImmersiveDoodleInteractor.swift in Sources */,
 				930A52452AE420960096B49B /* ThreeDimensionCanvasStateStore.swift in Sources */,
 				93E7AFE42A8A984400DABEE5 /* InteractWithEntityDemo.swift in Sources */,
 				9304902B2A5FA913007103F5 /* ZoomInModifier.swift in Sources */,
 				939FD3FF2A640B8500F5F78F /* XrOSBackground.swift in Sources */,
 				93806CF02A8BA51B005BDFFE /* AttachmentDemo.swift in Sources */,
 				93CD493C2A88A35C00DFF412 /* WindowBasedDemo.swift in Sources */,
+				93B341942BFB90AD009A7D97 /* StrokeMeshGenerating.swift in Sources */,
 				93CD493B2A88A35C00DFF412 /* ToolsView.swift in Sources */,
+				93B3419C2BFBA814009A7D97 /* RingStrokeGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,7 +515,7 @@
 				SDKROOT = xros;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				XROS_DEPLOYMENT_TARGET = 1.0;
+				XROS_DEPLOYMENT_TARGET = 1.1;
 			};
 			name = Debug;
 		};
@@ -520,7 +572,7 @@
 				SDKROOT = xros;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
-				XROS_DEPLOYMENT_TARGET = 1.0;
+				XROS_DEPLOYMENT_TARGET = 1.1;
 			};
 			name = Release;
 		};

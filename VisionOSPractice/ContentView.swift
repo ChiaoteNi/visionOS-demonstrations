@@ -25,7 +25,11 @@ struct ContentView: View {
         // MARK: Part III - Advanced cases
 #if os(visionOS)
 //        Create3DPlanesDemo()
-        ThreeDimensionCanvasDemo()
+//        ThreeDimensionCanvasDemo()
+
+        // MARK: Part IV - Immersive Space
+        ImmersiveDemoEntry()
+
 #endif
     }
 

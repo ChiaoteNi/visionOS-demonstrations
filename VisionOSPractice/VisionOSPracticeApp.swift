@@ -8,13 +8,14 @@
 import SwiftUI
 
 final class GlobalStateStore: ObservableObject {
-    @Published var currentColor = CGColor(red: 0, green: 0, blue: 0, alpha: 1)
+    @Published var currentColor = CGColor(red: 0.5, green: 0.5, blue: 0, alpha: 1)
 }
 
 @main
 struct VisionOSPracticeApp: App {
 
     @StateObject var globalStateStore = GlobalStateStore()
+    @Environment(\.openImmersiveSpace) private var openImmersiveSpace
 
     var body: some Scene {
         WindowGroup("main", id: "main") {
@@ -36,5 +37,18 @@ struct VisionOSPracticeApp: App {
             }
         }
         .windowStyle(.plain)
+
+        ImmersiveSpace(id: "ImmersivePlayground", for: String.self) { destination in
+            switch destination.wrappedValue {
+            case "Painting":
+                ImmersiveDoodleDemo()
+                    .environmentObject(globalStateStore)
+            case "ParticalsEmitter":
+                // TODO: next demonstration
+                EmptyView()
+            default:
+                EmptyView()
+            }
+        }.immersionStyle(selection: .constant(.mixed), in: .mixed)
     }
 }
