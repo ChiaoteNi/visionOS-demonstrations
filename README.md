@@ -12,11 +12,12 @@
       - You can extend the usage to create some control bar that is similar to the native keyboard in VisionOS.
     - `WindowBasedDemo`:
       - The glass background effect and z-offset are only supported from the visionOS instead of iOS.
-      - Therefore, I made this demonstration to show a potential way to apply some features with these case via the ViewModifier
+      - Therefore, I made this demonstration to show a potential way to apply some features with these case via the ViewModifier.
+
 ### Part II:
-  - Focus on the features and APIs related to working with 3D models
+  - Focus on features and APIs related to working with 3D models.
     - `Model3DAndRealityViewDemo`:
-      - In this demonstration, we'll focus on the difference between `Model3D` and `RealityView`
+      - This demonstration highlights the differences between `Model3D` and `RealityView`.
       - There're 2 previews in this demonstration. 
         The other one is a simple demo about the potential usage for the Model3D since we control it in detail.
     - `InteractWithEntityDemo`:
@@ -31,12 +32,13 @@
       - Thanks to the discussion from the sharing session, we added a gesture to the entity in this demonstration to check the behavior of attachment.
         Please try moving the entity, and you'll notice that the attachment moves with it.
     - `AnimationDemo`:
-      - To demonstrate how to apply animation to an entity in RealityView
+      - To demonstrate how to apply animation to an entity in RealityView.
+
 ### Part III
-  - Introduce some features of 3D space drawing
+  - Introduce features of 3D space drawing.
     - `Create3DPlanesDemo`:
       - It's a pre-practice demonstration for the `ThreeDimensionCanvasDemo`.
-      - In this demonstration, I showed how to create a place in the visionOS, and this implementation is used for making strokes in the next demonstration, `ThreeDimensionCanvasDemo`.
+      - In this demonstration, I show how to create a plane in visionOS, which is used for making strokes in the subsequent `ThreeDimensionCanvasDemo`.
       <table>
         <tr>
           <th>
@@ -84,3 +86,22 @@
         </tr>
         <tr>
       </table>
+
+### Part IV:
+- Immersive Space
+  - Building on the implementation from Part III, extend it to use immersive space.
+  - Additionally, improve the implementation of rendering the stroke in the Part IV demonstration.
+
+<table>
+        <tr>
+        <tr>
+          <th>
+          <video src="https://github.com/ChiaoteNi/visionOS-demonstrations/assets/40178645/9f3320da-455d-42f0-b5ab-d498496556c0" width="300" />
+          </th>
+          <th>
+          <img src="https://github.com/ChiaoteNi/visionOS-demonstrations/assets/40178645/4c5d0f10-ed1d-4a82-8ae3-ac9adc64b4b8" width="817" />
+          </th>
+        </tr>
+        <tr>
+      </table>
+
