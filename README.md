@@ -1,4 +1,6 @@
 # visionOS demonstrations
+<img src=https://github.com/ChiaoteNi/visionOS-demonstrations/assets/40178645/2caf0047-17c1-4a91-a38c-40e3a0f5886f width=500 />
+
 - This project is designed as a demonstration with the purpose of showcasing a diverse range of features and APIs related to app development for VisionOS
 - The content is organized into several distinct parts, each focusing on different aspects. 
   The series will be released incrementally after several iOS@Taipei meetup events.
