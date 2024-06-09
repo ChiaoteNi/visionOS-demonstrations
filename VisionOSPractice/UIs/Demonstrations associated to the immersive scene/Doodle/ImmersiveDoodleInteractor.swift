@@ -41,20 +41,26 @@ final class ImmersiveDoodleInteractor {
         }
         guard enableDrawingStrokes else { return }
 
-        if let currentLocation {
-            let stroke = strokeGenerator.makeStroke(
-                startPoint: currentLocation,
-                endPoint: convertedLocation,
-                color: currentColor,
-                previousStroke: currentStroke
-            )
-            self.currentStroke = stroke
-
-            Task {
-                await stateStore?.updateStroke(stroke)
-            }
+        guard let currentLocation else {
+            currentLocation = convertedLocation
+            return
         }
-        currentLocation = convertedLocation
+        guard convertedLocation.distance(to: currentLocation) >= 0.01 else {
+            return
+        }
+
+        let stroke = strokeGenerator.makeStroke(
+            startPoint: currentLocation,
+            endPoint: convertedLocation,
+            color: currentColor,
+            previousStroke: currentStroke
+        )
+        self.currentStroke = stroke
+        self.currentLocation = convertedLocation
+
+        Task {
+            await stateStore?.updateStroke(stroke)
+        }
     }
 
     func finishDrawing(_ location: TDPoint) {
@@ -96,5 +102,24 @@ extension ImmersiveDoodleInteractor {
             z: gestureLocation.z / canvasSize.z
         )
         return normalizedLocation
+    }
+}
+
+private extension SIMD3<Double> {
+
+    func difference(to other: SIMD3<Double>) -> SIMD3<Double> {
+        SIMD3(
+            x: other.x - x,
+            y: other.y - y,
+            z: other.z - z
+        )
+    }
+
+    func distance(to other: SIMD3<Double>) -> Double {
+        let difference = self.difference(to: other)
+        let x: Double = difference.x * difference.x
+        let y: Double = difference.y * difference.y
+        let z: Double = difference.z * difference.z
+        return sqrt(x + y + z)
     }
 }
